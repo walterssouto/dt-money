@@ -1,5 +1,5 @@
 {
-  "name": "03-dt-money",
+  "name": "dt-money",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://walterssouto.github.io/dt-money",
@@ -8,8 +8,8 @@
     "dev": "vite",
     "dev:server": "json-server server.json -p 3333 -w -d 500",
     "build": "tsc && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build --base=./",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint src --ext .tsx,.ts",
     "lint:fix": "eslint src --ext .tsx,.ts --fix"
